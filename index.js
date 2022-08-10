@@ -297,4 +297,3 @@ function scrollActiveSongToView() {
         })
     }, 300)
 }
-
