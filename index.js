@@ -76,7 +76,7 @@ function renderMusic() {
         var htmls = `
         <div class="song">
             <div class="song-info" div-index='${i + 1}' onclick='clicked(this)'>
-                <div class="thumb" style="background-image: url('/assets/image/song_img/${allMusic[i].img}')">
+                <div class="thumb" style="background-image: url('./assets/image/song_img/${allMusic[i].img}')">
                 </div>
                 <span class="song-info__number">${i + 1}</span>
                 <span class="song-info__author">${allMusic[i].author}</span>
@@ -90,12 +90,12 @@ function renderMusic() {
     }
     listSongWrap.innerHTML = arrRender.join('')
 }
-//<img src="/assets/image/song_img/${allMusic[i].img}" alt="${allMusic[i].img}">
+
 // Load Music To Disc Function
 function loadMusic(indexNum) {
     songName.innerText = allMusic[indexNum - 1].name
     songAuthor.innerText = allMusic[indexNum - 1].author
-    songImg.style.backgroundImage = `url('/assets/image/song_img/${allMusic[indexNum - 1].img}')`
+    songImg.style.backgroundImage = `url('./assets/image/song_img/${allMusic[indexNum - 1].img}')`
     songImg.alt = `${allMusic[indexNum - 1].src}`
     mainAudio.src = `/music_list/${allMusic[indexNum - 1].src}`
 }
