@@ -638,13 +638,13 @@ i.pause {
 
 
 .volume-bar {
-    width: 12%;
+    width: 8%;
     height: 280%;
     background-color: var(--white-cl);
     border-radius: 4px;
     position: absolute;
     bottom: 95%;
-    right: 3.6%;
+    right: 5.4%;
     animation: volFadeIn ease-in 0.2s;
     transition: transform ease-in 0.2s;
     justify-content: center;
